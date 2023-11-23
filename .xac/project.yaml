@@ -1,0 +1,15 @@
+apiVersion: xac.it.woa.com/v1alpha1
+kind: Project
+metadata:
+  annotations:
+    env-api-base: http://devnet.rio.tencent.com/ebus/acmdb_openapi/stage
+spec:
+  enName: simple-jenkins-demo-pipeline
+  cnName: simple-jenkins-demo-pipeline
+  references:
+    - application: "*"
+      env: "*"
+      type: tapd
+      projectID: "70097807"
+      enName: chrisyu_test
+      cnName: YSQ生产环境体验
